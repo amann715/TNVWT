@@ -1,5 +1,9 @@
-# Tennessee Valley Water Trails
+# TN Valley Water Trails
 
-Website for showcasing water trails in the Tennessee Valley.
+Sandbox for web developement
+
+## Description
+
+Showcasing water trails in the Tennessee Valley using responsive web design.
 
 
