@@ -4,7 +4,7 @@ Sandbox for web developement
 
 ## Description
 
-Showcasing water trails in the Tennessee Valley using responsive web design.
+Landing page and web maps for water trails in the Tennessee Valley.
 
 <p align="left">
   <img src="/IMG/TNVWT_Logo.png" width="302"/>
