@@ -1,1 +1,12 @@
-<!-- style sheet for TNVWT -->
+<!-- stylesheet for TNVWT -->
+
+*body {
+  font: monospace
+}
+
+.wrapper {
+  background-color: DarkCyan
+}
+.TNVWT_Logo {
+
+}

@@ -6,36 +6,54 @@
 
 <!--Stylesheet CSS -->
 <!--Sweetscroll CSS file local-->
-<link rel="stylesheet" type="css" src="/sweet-scroll-master/docs/style.css"></script>
-
+<link rel="stylesheet" type="css" src="/sweet-scroll-master/docs/style.css"></link>
+<link rel="stylesheet" type="text/css" src="style.css"></link>
 
 </head>
 <body>
 
-<a href="#intro" data-scroll>Go to Introduction></a>
-
-<div>
-    <section class="section" id="intro WaterTrails">
-      <h2>This is the intro slide</h2>
+<div id="wrapper">
+    <section class="section" id="WaterTrails">
+      <div class="container">
+        <h2>This is the intro slide</h2>
+        <img id="TNVWT_Logo" src="IMG/TNVWT_Logo.png" alt="TNVWT_Logo.png"></img>
+      </div>
     </section>
 
     <section class="section" id="ScenicRivers">
-      <h2> Redirect to TN.gov page </h2>
+      <div class="container">
+        <h2> Redirect to TN.gov page </h2>
+      </div>
     </section>
 
     <section class="section" id="Safety">
-      <h2> Display Main Warning </h2>
+      <div class="container">
+        <h2> Display Main Warning </h2>
+      </div>
     </section>
 
     <section class="section" id="Contact">
-      <h2> Display logos with hyperlinked button below logo </h2>
+      <div class="container">
+        <h2> Display logos with hyperlinked button below logo </h2>
+      </div>
     </section>
 </div>
 
-
+<footer>
+  <ul>
+    <li><a href="#WaterTrails">Water Trails</a></li>
+    <li><a href="#ScenicRivers">Scenic Rivers</a></li>
+    <li><a href="#Safety">Safety</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  </ul>
+</footer>
 
 <script src="/sweet-scroll-master/docs/js/sweet-scroll.js"></script>
-
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sweetScroll = new SweetScroll({/* some options */});
+}, false);
+</script>
 
 </body>
 
