@@ -1,7 +1,8 @@
 <!-- stylesheet for TNVWT -->
 
-*body {
-  font: monospace
+* {
+  font: monospace;
+  background-image: url(river_bridge.jpg);
 }
 
 .wrapper {

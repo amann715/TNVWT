@@ -9,6 +9,12 @@
 <link rel="stylesheet" type="css" src="/sweet-scroll-master/docs/style.css"></link>
 <link rel="stylesheet" type="text/css" src="style.css"></link>
 
+<style>
+body {
+  background-image: url(river_bridge.jpg);
+}
+
+</style>
 </head>
 <body>
 
@@ -50,9 +56,11 @@
 
 <script src="/sweet-scroll-master/docs/js/sweet-scroll.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const sweetScroll = new SweetScroll({/* some options */});
-}, false);
+    var sweetScroll = new SweetScroll({
+      horizontalScroll: true
+    }, "#wrapper");
+
+
 </script>
 
 </body>
