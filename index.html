@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>TNVWT</title>
+  <meta charset="utf-8">
+  <title>TNVWT</title>
 
-<!--Stylesheet CSS -->
-<link rel="stylesheet" type="text/css" src="style.css"></link>
-<!--fullpage CSS file local-->
-<link rel="stylesheet" type="text/css" src="fullPage.js-master/dist/jquery.fullpage.css" ></link>
+  <!--Stylesheet CSS -->
+  <link rel="stylesheet" type="text/css" src="style.css"></link>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-</head>
-<body>
-
-<div class="section">
-    <div class="slide" id="WaterTrails">
-      <div class="container">
-        <h2>This is the intro slide</h2>
-        <img id="TNVWT_Logo" src="IMG/TNVWT_Logo.png" alt="TNVWT_Logo.png"></img>
-      </div>
-    </div>
-
-    <div class="slide" id="ScenicRivers">
-      <div class="container">
-        <h2> Redirect to TN.gov page </h2>
-      </div>
-    </div>
-
-    <div class="slide" id="Safety">
-      <div class="container">
-        <h2> Display Main Warning </h2>
-      </div>
-    </div>
-
-    <section class="section" id="Contact">
-      <div class="container">
-        <h2> Display logos with hyperlinked button below logo </h2>
-      </div>
-    </section>
-</div>
-
-<footer>
-  <ul>
-    <li><a href="#WaterTrails">Water Trails</a></li>
-    <li><a href="#ScenicRivers">Scenic Rivers</a></li>
-    <li><a href="#Safety">Safety</a></li>
-    <li><a href="#Contact">Contact</a></li>
-  </ul>
-</footer>
+  <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+  <script src="vendors/jquery.easings.min.js"></script>
 
 
-<script type="text/javascript">
-$(document).ready(function() {
-$('#fullpage').fullpage();
+  <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+  <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+	   $('#fullpage').fullpage({
+    css3: true,
+    fixedElements: '#header, .footer',
+    sectionsColor: ['#f2f2f2'],
+  });
 });
 </script>
-<script type="text/javascript" src="fullPage.js-master/dist/jquery.fullpage.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="section">
+      <!-- Water Trail Slide -->
+      <div class="slide" id="slide1">
+        <div>
+          <h2>This is the intro slide</h2>
+          <img id="TNVWT_Logo" src="IMG/TNVWT_Logo.png" alt="TNVWT_Logo.png"></img>
+        </div>
+      </div>
+      <!-- End of Water Trail Slide -->
+
+      <!-- Scenic Rivers Slide -->
+      <div class="slide" id="slide2">
+        <div>
+          <h2> Redirect to TN.gov page </h2>
+        </div>
+      </div>
+      <!-- End of Scenic Rivers Slide -->
+
+      <!-- Safety Slide -->
+      <div class="slide" id="slide3">
+        <div>
+          <h2> Display Main Warning </h2>
+        </div>
+      </div>
+      <!-- End of Safety Slide -->
+
+      <!-- Contact Slide -->
+      <div class="slide" id="slide4">
+        <div>
+          <h2> Display logos with hyperlinked button below logo </h2>
+        </div>
+        </div>
+        <!-- End of Contact Slide -->
+
+    </div>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="#WaterTrails">Water Trails</a></li>
+      <li><a href="#ScenicRivers">Scenic Rivers</a></li>
+      <li><a href="#Safety">Safety</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </footer>
+
 
 </body>
 
