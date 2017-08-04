@@ -5,38 +5,33 @@
 <title>TNVWT</title>
 
 <!--Stylesheet CSS -->
-<!--Sweetscroll CSS file local-->
-<link rel="stylesheet" type="css" src="/sweet-scroll-master/docs/style.css"></link>
 <link rel="stylesheet" type="text/css" src="style.css"></link>
+<!--fullpage CSS file local-->
+<link rel="stylesheet" type="text/css" src="fullPage.js-master/dist/jquery.fullpage.css" ></link>
 
-<style>
-body {
-  background-image: url(river_bridge.jpg);
-}
 
-</style>
 </head>
 <body>
 
-<div id="wrapper">
-    <section class="section" id="WaterTrails">
+<div class="section">
+    <div class="slide" id="WaterTrails">
       <div class="container">
         <h2>This is the intro slide</h2>
         <img id="TNVWT_Logo" src="IMG/TNVWT_Logo.png" alt="TNVWT_Logo.png"></img>
       </div>
-    </section>
+    </div>
 
-    <section class="section" id="ScenicRivers">
+    <div class="slide" id="ScenicRivers">
       <div class="container">
         <h2> Redirect to TN.gov page </h2>
       </div>
-    </section>
+    </div>
 
-    <section class="section" id="Safety">
+    <div class="slide" id="Safety">
       <div class="container">
         <h2> Display Main Warning </h2>
       </div>
-    </section>
+    </div>
 
     <section class="section" id="Contact">
       <div class="container">
@@ -54,14 +49,14 @@ body {
   </ul>
 </footer>
 
-<script src="/sweet-scroll-master/docs/js/sweet-scroll.js"></script>
-<script>
-    var sweetScroll = new SweetScroll({
-      horizontalScroll: true
-    }, "#wrapper");
 
-
+<script type="text/javascript">
+$(document).ready(function() {
+$('#fullpage').fullpage();
+});
 </script>
+<script type="text/javascript" src="fullPage.js-master/dist/jquery.fullpage.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 </body>
 
