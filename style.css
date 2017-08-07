@@ -1,13 +1,5 @@
 <!-- stylesheet for TNVWT -->
 
-* {
-  font: monospace;
-  background-image: url(river_bridge.jpg);
-}
-
-.wrapper {
-  background-color: DarkCyan
-}
-.TNVWT_Logo {
-
+h2 {
+  color: DarkCyan;
 }
