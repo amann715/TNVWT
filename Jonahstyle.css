@@ -1,0 +1,23 @@
+/*-- stylesheet for TNVWT */
+
+h2 {
+  color: DarkCyan !important;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.fullpage {
+  background-image: url("river_bridge.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
