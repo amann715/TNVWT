@@ -1,14 +1,12 @@
 /*-- stylesheet for TNVWT */
 
-h2 {
-  color: DarkCyan;
-}
 
 body {
   margin: 0;
   padding: 0;
 }
 
+/* Background */
 #fullpage {
   background-image: url(IMG/river_bridge.jpg);
   background-repeat:no-repeat;
@@ -17,22 +15,30 @@ body {
   -o-background-size:cover;
   background-size:cover;
   background-position:center;
+  z-index: 1;
 }
 
+/* Centered Text */
 .slide {
   text-align: center;
 }
-/* repeated image per slide
-#slide1,
-#slide2,
-#slide3,
-#slide4 {
-  background-image: url(IMG/river_bridge.jpg);
-  background-repeat:no-repeat;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  background-position:center;
+
+/* Overwriting styles for the navigation dots (to place it where we want)
+	* --------------------------------------- */
+	.fp-slidesNav.bottom{
+		bottom: 50px;
+	}
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #Darkcyan !important;
+	}
+/* active and hovering over nav dot */
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+
 }
-*/
+/* all of the Nav dots */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: Red;
+}

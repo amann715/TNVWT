@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>TNVWT</title>
 
-  <!--Stylesheet CSS -->
+  <!--Stylesheets CSS -->
+  <!-- Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+  <!-- Fullpage -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css"></link>
-   <link rel="stylesheet" type="text/css" href="Jonahstyle.css"></link>
-<!--  <link rel="stylesheet" type="text/css" href="Andrewstyle.css"></link> -->
+  <!-- Custom -->
+  <link rel="stylesheet" type="text/css" href="Jonahstyle.css"></link>
+  <!--  <link rel="stylesheet" type="text/css" href="Andrewstyle.css"></link> -->
 
+
+  <!-- Google ajax api javascript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- End of Fullpage javascript-->
 
+  <!-- Fullpage javascript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+
   <script type="text/javascript">
-  $(document).ready(function() {
-	   $('#fullpage').fullpage({
-    css3: true,
-    fixedElements: '#header, .footer',
-  });
-});
-</script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        css3: true,
+        slidesNavigation: true,
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+      });
+    });
+  </script>
+  <!-- End of Fullpage javascript-->
 </head>
 
 <body>
@@ -59,21 +71,11 @@
         <div>
           <h2> Display logos with hyperlinked button below logo </h2>
         </div>
-        </div>
-        <!-- End of Contact Slide -->
+      </div>
+      <!-- End of Contact Slide -->
 
     </div>
   </div>
-
-  <footer>
-    <ul>
-      <li><a href="#WaterTrails">Water Trails</a></li>
-      <li><a href="#ScenicRivers">Scenic Rivers</a></li>
-      <li><a href="#Safety">Safety</a></li>
-      <li><a href="#Contact">Contact</a></li>
-    </ul>
-  </footer>
-
 
 </body>
 
