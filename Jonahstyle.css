@@ -2,7 +2,7 @@
 
 h2 {
   color: DarkCyan !important;
-  
+
 }
 
 body {
@@ -11,13 +11,19 @@ body {
 
 }
 
+.slide {
+  text-align: center;
+}
 
-.fullpage {
-  background-image: url("river_bridge.jpg");
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#slide1,
+#slide2,
+#slide3,
+#slide4 {
+  background-image: url(IMG/river_bridge.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
 }
