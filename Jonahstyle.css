@@ -1,20 +1,28 @@
 /*-- stylesheet for TNVWT */
 
 h2 {
-  color: DarkCyan !important;
-
+  color: DarkCyan;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
 
+#fullpage {
+  background-image: url(IMG/river_bridge.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
 }
 
 .slide {
   text-align: center;
 }
-
+/* repeated image per slide
 #slide1,
 #slide2,
 #slide3,
@@ -27,3 +35,4 @@ body {
   background-size:cover;
   background-position:center;
 }
+*/
