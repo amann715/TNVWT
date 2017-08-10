@@ -14,6 +14,9 @@
   <link rel="stylesheet" type="text/css" href="Jonahstyle.css"></link>
   <!--  <link rel="stylesheet" type="text/css" href="Andrewstyle.css"></link> -->
 
+  <!-- Font & Icon Links -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 
   <!-- Google ajax api javascript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -23,13 +26,20 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
 
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        css3: true,
-        slidesNavigation: true,
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-      });
-    });
+  $('#fullpage').fullpage({
+      navigation: false,
+      onLeave: function(index, nextIndex, direction){
+      	activateNavItem($('#my-nav').find('li').eq(nextIndex-1));
+      },
+      afterRender: function(){
+      	activateNavItem($('#my-nav').find('li').eq($('.section.active').index()))
+      }
+  });
+
+  $('.fa-bell').click(function(){
+  	var destination = $(this).closest('li');
+  	$.fn.fullpage.moveTo(destination.index() + 1 );
+  });
   </script>
   <!-- End of Fullpage javascript-->
 </head>
@@ -38,20 +48,19 @@
   <div id="fullpage">
     <div class="section">
       <!-- Water Trail Slide -->
-      <div class="slide" id="slide1" data-anchor="slide1">
+      <div class="slide" id="slide1">
         <div>
           <img id="TNVWT_Logo" src="IMG/TNVWT_Logo.png" alt="TNVWT_Logo.png"></img>
         </div>
         <div>
-          <button id="mapbtn" class="btn" alt="Map button">
-            <a href="https://congeo.maps.arcgis.com/apps/MapJournal/index.html?appid=971caa11d8934e12a906fed6f0899fd3"></a>
-          </button>
+            <a href="https://congeo.maps.arcgis.com/apps/MapJournal/index.html?appid=971caa11d8934e12a906fed6f0899fd3"
+              class="btn btn-info" role="button">Explore Tennessee Water Trails</a>
         </div>
       </div>
       <!-- End of Water Trail Slide -->
 
       <!-- Scenic Rivers Slide -->
-      <div class="slide" id="slide2" data-anchor="slide2">
+      <div class="slide" id="slide2">
         <div>
           <h2> Redirect to TN.gov page </h2>
         </div>
@@ -59,7 +68,7 @@
       <!-- End of Scenic Rivers Slide -->
 
       <!-- Safety Slide -->
-      <div class="slide" id="slide3" data-anchor="slide3">
+      <div class="slide" id="slide3">
         <div>
           <h2> Display Main Warning </h2>
         </div>
@@ -67,7 +76,7 @@
       <!-- End of Safety Slide -->
 
       <!-- Contact Slide -->
-      <div class="slide" id="slide4" data-anchor="slide4">
+      <div class="slide" id="slide4">
         <div>
           <h2> Display logos with hyperlinked button below logo </h2>
         </div>
@@ -76,6 +85,14 @@
 
     </div>
   </div>
+
+  <ul id="my-nav">
+      <li><i class="fa fa-map" aria-hidden="true"></i></li>
+      <li><i class="fa fa-binoculars" aria-hidden="true"></i></li>
+      <li><i class="fa fa-plus-square" aria-hidden="true"></i></li>
+      <li><i class="fa fa-address-card" aria-hidden="true"></i></li>
+  </ul>
+
 
 </body>
 
