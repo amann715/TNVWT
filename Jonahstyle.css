@@ -26,7 +26,7 @@ body {
 #my-nav{
     position:fixed;
     right: 20px;
-    top: 50%;
+    top: 80%;
     margin-top: -40px;
 }
 #my-nav li{
