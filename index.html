@@ -84,25 +84,26 @@
       slidesNavigation: false,
       loopHorizontal: true,
       dragAndMove: false,
+      controlArrows: false,
       anchors: ['page1'],
       });
 
-          //adding the slide to action to the button (NOT WORKING)
+          //adding the slide to action to the button (Map)
           $(document).on('click', '#famap', function(){
           $.fn.fullpage.moveTo('page1', 0);
 });
 
-          //adding the slide right action to the button (WORKING)
+          //adding the slide to action to the button (Scenic Rivers)
           $(document).on('click', '#fabinoculars', function(){
             $.fn.fullpage.moveTo('page1', 1);
 });
 
-          //adding the slide right action to the button
+          //adding the slide to action to the button (Safety)
           $(document).on('click', '#faheartbeat', function(){
           $.fn.fullpage.moveTo('page1', 2);
 });
 
-          //adding the slide right action to the button (WORKING)
+          //adding the slide to action to the button (Contact)
           $(document).on('click', '#facard', function(){
             $.fn.fullpage.moveTo('page1', 3);
 });
