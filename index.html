@@ -68,7 +68,7 @@
   </div>
 
 <ul id="my-nav">
-    <li><i class="fa fa-map" aria-hidden="true" id="famap" href=""></i></li>
+    <li><i class="fa fa-map" aria-hidden="true" id="famap"></i></li>
     <li><i class="fa fa-binoculars" aria-hidden="true" id="fabinoculars"></i></li>
     <li><i class="fa fa-heartbeat" aria-hidden="true" id="faheartbeat"></i></li>
     <li><i class="fa fa-address-card" aria-hidden="true" id="facard"></i></li>
@@ -84,23 +84,29 @@
       slidesNavigation: false,
       loopHorizontal: true,
       dragAndMove: false,
-      anchors: ['Page1', 'firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide'],
+      anchors: ['page1'],
       });
 
           //adding the slide to action to the button (NOT WORKING)
           $(document).on('click', '#famap', function(){
-          $.fn.fullpage.moveTo('page1', 1);
+          $.fn.fullpage.moveTo('page1', 0);
 });
 
           //adding the slide right action to the button (WORKING)
           $(document).on('click', '#fabinoculars', function(){
-            $.fn.fullpage.moveSlideRight();
+            $.fn.fullpage.moveTo('page1', 1);
 });
 
           //adding the slide right action to the button
           $(document).on('click', '#faheartbeat', function(){
-          $.fn.fullpage.moveSlideRight();
+          $.fn.fullpage.moveTo('page1', 2);
 });
+
+          //adding the slide right action to the button (WORKING)
+          $(document).on('click', '#facard', function(){
+            $.fn.fullpage.moveTo('page1', 3);
+});
+
 });
 
 
