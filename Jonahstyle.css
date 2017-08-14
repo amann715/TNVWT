@@ -23,17 +23,20 @@ body {
   text-align: center;
 }
 
+/* Navigation CSS */
+
 #my-nav{
-    position:fixed;
-    right: 20px;
-    top: 80%;
-    margin-top: -40px;
+    position: relative;
+    margin-top: -110px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 #my-nav li{
     list-style-type:none;
-    font-size: 15px;
+    font-size: 2em;
     margin: 10px 0;
-    cursor:pointer;
+    cursor: pointer;
 }
 #my-nav li:hover,
 #my-nav li.active{
@@ -44,5 +47,27 @@ body.fp-viewing-page1-firstSlide #my-nav .fa-map,
 body.fp-viewing-page1-secondSlide #my-nav .fa-binoculars,
 body.fp-viewing-page1-thirdSlide #my-nav .fa-heartbeat,
 body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
-  color: yellow;
+  color: #5bc0de;
 }
+
+li
+ {
+ display:inline;
+ padding : 0px 3px 0px 3px;
+ font-size: 2em;
+ }
+
+/* firstSlide */
+#TNVWT_Logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* secondSlide */
+#scenicriver p {
+  color: white;
+}
+
+
+/* thirdSlide */
+
+/* fourthSlide */
