@@ -40,14 +40,14 @@ body {
 }
 #my-nav li:hover,
 #my-nav li.active{
-    color: red;
+    color: white ;
 }
 
 body.fp-viewing-page1-firstSlide #my-nav .fa-map,
 body.fp-viewing-page1-secondSlide #my-nav .fa-binoculars,
 body.fp-viewing-page1-thirdSlide #my-nav .fa-heartbeat,
 body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
-  color: #5bc0de;
+  color: #26cafb;
 }
 
 li
@@ -61,7 +61,6 @@ li
 #TNVWT_Logo {
   margin-left: auto;
   margin-right: auto;
-}
 /* secondSlide */
 #scenicriver p {
   color: white;
