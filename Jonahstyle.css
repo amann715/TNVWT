@@ -37,12 +37,12 @@ body {
 }
 #my-nav li:hover,
 #my-nav li.active{
-    color: red;
+    color: white ;
 }
 
 body.fp-viewing-page1-firstSlide #my-nav .fa-map,
 body.fp-viewing-page1-secondSlide #my-nav .fa-binoculars,
 body.fp-viewing-page1-thirdSlide #my-nav .fa-heartbeat,
 body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
-  color: yellow;
+  color: #26cafb;
 }
