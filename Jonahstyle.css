@@ -42,7 +42,7 @@ ol {
 
 /* Navigation CSS */
 
-#my-nav{
+#my-nav {
     position: relative;
     margin-top: -110px;
     text-align: center;
@@ -50,6 +50,7 @@ ol {
     margin-right: auto;
     background-color: lightblue;
     max-width: 25%;
+    padding-left: 0px !important;
 }
 #my-nav li{
     font-size: 2em;
