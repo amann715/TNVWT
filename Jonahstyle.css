@@ -1,10 +1,27 @@
 /*-- stylesheet for TNVWT */
-
+/* Text and body */
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif !important;
+}
+
+p {
+  color: white;
+  font-size: 2em;
+}
+
+.text-div {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    opacity: .8;
+}
+
+ol {
+  list-style-type: decimal !important;
 }
 
 /* Background */
@@ -33,10 +50,12 @@ body {
     margin-right: auto;
 }
 #my-nav li{
-    list-style-type:none;
     font-size: 2em;
     margin: 10px 0;
     cursor: pointer;
+    display:inline;
+    padding : 0px 3px 0px 3px;
+    font-size: 2em;
 }
 #my-nav li:hover,
 #my-nav li.active{
@@ -50,23 +69,34 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
   color: #26cafb;
 }
 
-li
+/*li
  {
  display:inline;
  padding : 0px 3px 0px 3px;
  font-size: 2em;
  }
-
+*/
 /* firstSlide */
 #TNVWT_Logo {
   margin-left: auto;
   margin-right: auto;
-/* secondSlide */
-#scenicriver p {
-  color: white;
 }
-
+/* secondSlide */
 
 /* thirdSlide */
+#slide3 h2 {
+  color: white;
+  font-size: 1.5em;
+}
+
+#safetyWarning {
+  height: 15%;
+  overflow: scroll;
+}
+
+#safetyWarning ol {
+  text-align: left;
+  padding-right: 3px;
+}
 
 /* fourthSlide */
