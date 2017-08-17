@@ -80,18 +80,27 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
   color: #26cafb;
 }
 
-/*li
- {
- display:inline;
- padding : 0px 3px 0px 3px;
- font-size: 2em;
- }
-*/
 /* firstSlide */
 #TNVWT_Logo {
   margin-left: auto;
   margin-right: auto;
+  height: auto;
+  padding-bottom: 20px;
+  width: auto;
+  max-width: 100%
 }
+
+#content1{
+  height: auto;
+  display: inline-grid;
+  margin:auto;
+}
+
+#mapbtn {
+  width: 200px;
+  margin: auto;
+}
+
 /* secondSlide */
 
 /* thirdSlide */
