@@ -1,0 +1,149 @@
+/*-- stylesheet for TNVWT */
+/* Text and body */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+p {
+  color: white;
+  font-size: 2em;
+}
+
+.text-div {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    opacity: .8;
+}
+
+ol {
+  list-style-type: decimal !important;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.66);
+    z-index: 9;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+/* Background */
+#fullpage {
+  background-image: url(IMG/river_bridge.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+/* Centered Text */
+.slide {
+  text-align: center;
+}
+
+/* Navigation CSS */
+
+#my-nav {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px !important;
+}
+#my-nav li{
+    font-size: 2.5em;
+    margin: 10px 0;
+    cursor: pointer;
+    display:inline;
+    padding : 0px 20px;
+}
+#my-nav li:hover,
+#my-nav li.active{
+    color: white ;
+}
+
+body.fp-viewing-page1-firstSlide #my-nav .fa-map,
+body.fp-viewing-page1-secondSlide #my-nav .fa-binoculars,
+body.fp-viewing-page1-thirdSlide #my-nav .fa-heartbeat,
+body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
+  color: #26cafb;
+}
+
+/* firstSlide */
+#TNVWT_Logo {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding-bottom: 20px;
+  width: auto;
+  max-width: 100%
+}
+
+#content1{
+  height: auto;
+  display: inline-grid;
+  margin:auto;
+}
+
+#mapbtn {
+  width: 200px;
+  margin: auto;
+}
+
+/* secondSlide */
+
+/* thirdSlide */
+#slide3 h1 {
+  color: red;
+  font-weight: bold;
+}
+
+#slide3 h2 {
+  color: white;
+  font-size: 1.5em;
+}
+
+#slide3 h3 {
+    color: white;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#safetyWarning {
+  height: 15%;
+  overflow: scroll;
+}
+
+#safetyWarning ol {
+  text-align: left;
+  padding-right: 3px;
+}
+
+#safetyWarning li {
+  color: white;
+}
+
+#safetyWarning ol ul li {
+  color: blue;
+}
+
+#safetyWarning p {
+  padding: 2px;
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: #1fff1f;
+}
+
+/* fourthSlide */

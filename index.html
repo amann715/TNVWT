@@ -1,75 +1,148 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>TNVWT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--Stylesheet CSS -->
+  <!--Stylesheets CSS -->
+  <!-- Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+  <!-- Fullpage -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css"></link>
-  <link rel="stylesheet" type="text/css" href="style.css"></link>
+  <!-- Custom -->
+  <link rel="stylesheet" type="text/css" href="Jonahstyle.css"></link>
+  <!--  <link rel="stylesheet" type="text/css" href="Andrewstyle.css"></link> -->
 
+  <!-- Font & Icon Links -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+  <!-- Google ajax api javascript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- End of Fullpage javascript-->
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
-  <script type="text/javascript">
-  $(document).ready(function() {
-	   $('#fullpage').fullpage({
-    css3: true,
-    fixedElements: '#header, .footer',
-    sectionsColor: ['#f2f2f2'],
-  });
-});
-</script>
+
 </head>
 
 <body>
   <div id="fullpage">
-    <div class="section">
+    <div class="section fp-auto-height-responsive">
       <!-- Water Trail Slide -->
-      <div class="slide" id="slide1" data-anchor="slide1">
-        <div>
-          <h2>This is the intro slide</h2>
+      <div class="slide" id="slide1" data-anchor="firstSlide">
+        <div id="content1">
           <img id="TNVWT_Logo" src="IMG/TNVWT_Logo.png" alt="TNVWT_Logo.png"></img>
+          <a href="https://congeo.maps.arcgis.com/apps/MapJournal/index.html?appid=971caa11d8934e12a906fed6f0899fd3"
+            class="btn btn-info" role="button" id="mapbtn">Explore Tennessee Water Trails</a>
         </div>
       </div>
       <!-- End of Water Trail Slide -->
 
       <!-- Scenic Rivers Slide -->
-      <div class="slide" id="slide2" data-anchor="slide2">
+      <div class="slide" id="slide2" data-anchor="secondSlide">
+        <div id="scenicriver" class="text-div">
+          <p> The Tennessee Scenic Rivers Program is intended to preserve and protect the free flowing, unpolluted and outstanding scenic,
+            recreational, geologic, botanical, fish, wildlife, historic or cultural values of selected rivers or river segments in the state. </p>
+        </div>
         <div>
-          <h2> Redirect to TN.gov page </h2>
+            <a href="https://tn.gov/environment/topic/na-sr-scenic-rivers"
+              class="btn btn-info" role="button">Find Out More</a>
         </div>
       </div>
       <!-- End of Scenic Rivers Slide -->
 
       <!-- Safety Slide -->
-      <div class="slide" id="slide3" data-anchor="slide3">
+      <div class="slide" id="slide3" data-anchor="thirdSlide">
         <div>
-          <h2> Display Main Warning </h2>
+          <h1> WARNING: PADDLE AT YOUR OWN RISK. </h1>
+          <h3> TVA, the State of Tennessee, and other project affiliates are not responsible for your personal safety,
+            vehicle, damage to you, your boat, or your personal property. Boating involves some risk of drowning, injury or death.</h3>
+        </div>
+        <div class="text-div" id="safetyWarning">
+        <ol type="1">
+          <p> Scroll down for Safety Warnings </p>
+          <li>Wear a properly fitted U.S. Coast Guard approved life jacket at all times while on the water.</li>
+          <li>Know how to safely enter, exit, and paddle your canoe or kayak. Know how to get out of, hang on to, and re-enter your capsized boat.</li>
+          <li>File a trip plan. Notify family or friends of your route and planned time and location of return. Paddle with someone more experienced than you when possible.</li>
+          <li>Some water trails are on controlled waterways. Be sure to check dam release schedule and weather forecast</li>
+            <ul>
+              <li>TVA Recreational Dam Release Schedule</li>
+              <li>TVA Lake Levels</li>
+              <li>USGS Streamflow</li>
+              <li>USACE Release Schedule</li>
+            </ul>
+          <li>Do not paddle under the influence of drugs or alcohol, which impair the coordination and balance you need to control a canoe,
+            kayak, raft or SUP. Public display or consumption of alcoholic beverages is not permitted on public lands.</li>
+          <li>Dress appropriately. Be visible.</li>
+        </ol>
+      </div>
+        <div>
+      <h3>Local, state and federal camping, boating, fishing and hunting rules and regulations apply.</h3>
         </div>
       </div>
       <!-- End of Safety Slide -->
 
       <!-- Contact Slide -->
-      <div class="slide" id="slide4" data-anchor="slide4">
+      <div class="slide" id="slide4" data-anchor="fourthSlide">
         <div>
           <h2> Display logos with hyperlinked button below logo </h2>
         </div>
-        </div>
-        <!-- End of Contact Slide -->
+      </div>
+      <!-- End of Contact Slide -->
 
     </div>
-  </div>
+<footer>
+<ul id="my-nav">
+    <li><i class="fa fa-map" aria-hidden="true" id="famap"></i></li>
+    <li><i class="fa fa-binoculars" aria-hidden="true" id="fabinoculars"></i></li>
+    <li><i class="fa fa-heartbeat" aria-hidden="true" id="faheartbeat"></i></li>
+    <li><i class="fa fa-address-card" aria-hidden="true" id="facard"></i></li>
+</ul>
+</footer>
+<!-- Fullpage javascript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
 
-  <footer>
-    <ul>
-      <li><a href="#WaterTrails">Water Trails</a></li>
-      <li><a href="#ScenicRivers">Scenic Rivers</a></li>
-      <li><a href="#Safety">Safety</a></li>
-      <li><a href="#Contact">Contact</a></li>
-    </ul>
-  </footer>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      css3: true,
+      slidesNavigation: false,
+      loopHorizontal: true,
+      dragAndMove: false,
+      controlArrows: false,
+      anchors: ['page1'],
+      recordHistory: false,
+      fixedElements: '.footer',
+});
 
+
+          //adding the slide to action to the button (Map)
+          $(document).on('click', '#famap', function(){
+          $.fn.fullpage.moveTo('page1', 0);
+});
+
+          //adding the slide to action to the button (Scenic Rivers)
+          $(document).on('click', '#fabinoculars', function(){
+            $.fn.fullpage.moveTo('page1', 1);
+});
+
+          //adding the slide to action to the button (Safety)
+          $(document).on('click', '#faheartbeat', function(){
+          $.fn.fullpage.moveTo('page1', 2);
+});
+
+          //adding the slide to action to the button (Contact)
+          $(document).on('click', '#facard', function(){
+            $.fn.fullpage.moveTo('page1', 3);
+});
+
+});
+
+
+</script>
+<!-- End of Fullpage javascript-->
 
 </body>
 
