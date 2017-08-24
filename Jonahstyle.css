@@ -106,11 +106,19 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
 /* thirdSlide */
 #slide3 h1 {
   color: red;
+  font-weight: bold;
 }
 
 #slide3 h2 {
   color: white;
   font-size: 1.5em;
+}
+
+#slide3 h3 {
+    color: white;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 #safetyWarning {
@@ -121,6 +129,21 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
 #safetyWarning ol {
   text-align: left;
   padding-right: 3px;
+}
+
+#safetyWarning li {
+  color: white;
+}
+
+#safetyWarning ol ul li {
+  color: blue;
+}
+
+#safetyWarning p {
+  padding: 2px;
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: #1fff1f;
 }
 
 /* fourthSlide */
