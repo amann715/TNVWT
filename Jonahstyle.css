@@ -108,7 +108,7 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
 }
 
 #mapbtn {
-  width: 250px;
+  width: 275px;
   margin: auto;
   font-size: 18px;
   background-color: #3c9cb9;
@@ -125,11 +125,17 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
   padding: 6px;
 }
 
+#scenicText {
+  margin: 0;
+}
+
                                       /* thirdSlide */
 #slide3 h1 {
   color: red;
   font-weight: bold;
   letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-size: 42px;
 }
 
 #slide3 h2 {
@@ -143,14 +149,15 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
     padding-right: 20px;
     padding-left: 20px;
     margin: auto;
-    width: 80%;
+    width: 78%;
     font-size: 22px;
 }
 
 #safetyWarning {
-  height: 15%;
+  height: 25%;
   overflow: scroll;
   border-radius: 20px;
+  margin-top: 30px;
 }
 
 #safetyWarning ol {
@@ -171,7 +178,12 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
   padding: 2px;
   font-size: 18px;
   margin-bottom: 0px;
-  color: #1fff1f;
+  color: #337ab7;
+  text-decoration: underline;
+}
+
+#safetyBtmH {
+  margin-top: 50px !important;
 }
 
                         /* fourthSlide */
