@@ -154,8 +154,9 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
 }
 
 #safetyWarning {
-  height: 25%;
-  overflow: scroll;
+  height: fit-content;
+  overflow: visible;
+  line-height: 1em;
   border-radius: 20px;
   margin-top: 30px;
 }
@@ -163,6 +164,7 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
 #safetyWarning ol {
   text-align: left;
   padding-right: 3px;
+  margin-bottom: 0px !important;
 }
 
 #safetyWarning li {
@@ -182,9 +184,6 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
   text-decoration: underline;
 }
 
-#safetyBtmH {
-  margin-top: 50px !important;
-}
 
                         /* fourthSlide */
 #logoText {
