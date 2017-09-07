@@ -187,19 +187,27 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
 }
 
                         /* fourthSlide */
+#logoText {
+  margin-bottom: 3%;
+}
+
+#logo_container {
+  margin-bottom: 10%;
+}
+
 #slide4 h2 {
   color: white;
 }
 
 #TVA_logo {
-      width: 15%;
+      width: 17%;
       height: auto;
       float: left;
       cursor: pointer;
 }
 
 #NPS_logo {
-      width: 15%;
+      width: 16%;
       height: auto;
       cursor: pointer;
 }
@@ -209,7 +217,7 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
       float: right;
       cursor: pointer;
       border-radius: 15px;
-      padding: 19px;
+      padding: 4px;
 }
 
 /* Media Queries */
