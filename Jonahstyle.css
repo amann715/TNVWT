@@ -31,6 +31,14 @@ strong {
     border-radius: 6px;
 }
 
+.fp-controlArrow.fp-prev {
+      border-color: transparent rgba(60, 156, 185, 0.4) transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent rgba(60, 156, 185, 0.4);
+}
+
 ol {
   list-style-type: decimal !important;
 }
@@ -136,6 +144,7 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
   letter-spacing: 3px;
   margin-bottom: 20px;
   font-size: 42px;
+  margin-top: 10px;
 }
 
 #slide3 h2 {
@@ -158,21 +167,28 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
   overflow: visible;
   line-height: 1em;
   border-radius: 20px;
-  margin-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: none;
 }
 
 #safetyWarning ol {
   text-align: left;
   padding-right: 3px;
   margin-bottom: 0px !important;
+  line-height: 125%;
 }
 
 #safetyWarning li {
   color: white;
 }
 
-#safetyWarning ol ul li {
-  color: blue;
+#safetyWarning ol ul {
+  text-decoration-line: underline;
+}
+
+#safetyWarning ol ul li a {
+  color: black;
 }
 
 #safetyWarning p {
@@ -184,6 +200,16 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
   text-decoration: underline;
 }
 
+#warningBtn {
+  width: 200px;
+margin: auto;
+font-size: 20px;
+background-color: #3c9cb9;
+border-color: #3c9cb9;
+padding: 6px;
+margin-bottom: 30px;
+margin-top: 10px;
+}
 
                         /* fourthSlide */
 #logoText {
@@ -191,7 +217,7 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
 }
 
 #logo_container {
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 
 #slide4 h2 {

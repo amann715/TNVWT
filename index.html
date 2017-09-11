@@ -80,8 +80,8 @@
             <li>Local, state and federal camping, boating, fishing and hunting rules and regulations apply.</li>
           </ol>
         </div>
-        <button type="button"
-          onclick="myFunction()">
+        <button type="button" class="btn btn-info" role="button" id="warningBtn"
+          href="javascript:toggleDiv('safetyWarning');">
       Read more
   </button>
       </div>
@@ -153,16 +153,15 @@
         });
       </script>
       <!-- End of Fullpage javascript-->
+
       <script>
-function myFunction() {
-    var x = document.getElementById('safetyWarning');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script>
+      $(document).ready(function(){
+          $("#warningBtn").click(function(){
+              $("#safetyWarning").toggle();
+          });
+      });
+      </script>
+
 </body>
 
 </html>
