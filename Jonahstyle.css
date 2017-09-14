@@ -12,12 +12,31 @@ p {
   font-size: 2em;
 }
 
+strong {
+    font-size: 1.2em;
+    color: #5bc0de;
+}
+
+.fp-tableCell {
+  background-color: rgba(2, 2, 2, 0.2);
+}
+
 .text-div {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    background-color: grey;
-    opacity: .8;
+    background-color: rgba(2, 2, 2, 0.2);
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.fp-controlArrow.fp-prev {
+      border-color: transparent rgba(60, 156, 185, 0.4) transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent rgba(60, 156, 185, 0.4);
 }
 
 ol {
@@ -62,11 +81,11 @@ footer {
     padding-left: 0px !important;
 }
 #my-nav li{
-    font-size: 2.5em;
+    font-size: 2.6em;
     margin: 10px 0;
     cursor: pointer;
     display:inline;
-    padding : 0px 20px;
+    padding : 0px 130px;
 }
 #my-nav li:hover,
 #my-nav li.active{
@@ -80,12 +99,12 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
   color: #26cafb;
 }
 
-/* firstSlide */
+                                /* firstSlide */
 #TNVWT_Logo {
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   width: auto;
   max-width: 100%
 }
@@ -97,16 +116,35 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
 }
 
 #mapbtn {
-  width: 200px;
+  width: 275px;
   margin: auto;
+  font-size: 18px;
+  background-color: #3c9cb9;
+  border-color: #3c9cb9;
 }
 
-/* secondSlide */
+                                      /* secondSlide */
+#scenicbtn {
+  width: 200px;
+  margin: auto;
+  font-size: 20px;
+  background-color: #3c9cb9;
+  border-color: #3c9cb9;
+  padding: 6px;
+}
 
-/* thirdSlide */
+#scenicText {
+  margin: 0;
+}
+
+                                      /* thirdSlide */
 #slide3 h1 {
   color: red;
   font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-size: 42px;
+  margin-top: 10px;
 }
 
 #slide3 h2 {
@@ -119,31 +157,98 @@ body.fp-viewing-page1-fourthSlide #my-nav .fa-address-card {
     padding-bottom: 10px;
     padding-right: 20px;
     padding-left: 20px;
+    margin: auto;
+    width: 78%;
+    font-size: 22px;
 }
 
 #safetyWarning {
-  height: 15%;
-  overflow: scroll;
+  height: fit-content;
+  overflow: visible;
+  line-height: 1em;
+  border-radius: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: none;
 }
 
 #safetyWarning ol {
   text-align: left;
   padding-right: 3px;
+  margin-bottom: 0px !important;
+  line-height: 125%;
 }
 
 #safetyWarning li {
   color: white;
 }
 
-#safetyWarning ol ul li {
-  color: blue;
+#safetyWarning ol ul {
+  text-decoration-line: underline;
+}
+
+#safetyWarning ol ul li a {
+  color: black;
 }
 
 #safetyWarning p {
+  text-align: center;
   padding: 2px;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0px;
-  color: #1fff1f;
+  color: #337ab7;
+  text-decoration: underline;
 }
 
-/* fourthSlide */
+#warningBtn {
+  width: 200px;
+margin: auto;
+font-size: 20px;
+background-color: #3c9cb9;
+border-color: #3c9cb9;
+padding: 6px;
+margin-bottom: 30px;
+margin-top: 10px;
+}
+
+                        /* fourthSlide */
+#logoText {
+  margin-bottom: 3%;
+}
+
+#logo_container {
+  margin-bottom: 3%;
+}
+
+#slide4 h2 {
+  color: white;
+}
+
+#TVA_logo {
+      width: 17%;
+      height: auto;
+      float: left;
+      cursor: pointer;
+}
+
+#NPS_logo {
+      width: 16%;
+      height: auto;
+      cursor: pointer;
+}
+#TSP_logo {
+      width: 18%;
+      height: auto;
+      float: right;
+      cursor: pointer;
+      border-radius: 15px;
+      padding: 4px;
+}
+
+/* Media Queries */
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
