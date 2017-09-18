@@ -35,9 +35,15 @@
       <div class="slide" id="slide1" data-anchor="firstSlide">
         <div id="content1">
           <img id="TNVWT_Logo" src="IMG/TNVWT_Logo.png" alt="TNVWT_Logo.png"></img>
-          <a href="https://congeo.maps.arcgis.com/apps/MapJournal/index.html?appid=971caa11d8934e12a906fed6f0899fd3" class="btn btn-info" role="button" id="mapbtn">Explore Tennessee Water Trails</a>
+          <button type="button" class="btn btn-info" role="button" id="mapbtn"
+            href="javascript:toggleDiv('Arcmap');"> Explore our Map
+        </button>
         </div>
+        <div id="Arcmap">
+        <iframe width='500' height='400' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' title='My Map'
+        src='https://congeo.maps.arcgis.com/apps/Styler/index.html?appid=a2b98e0b034244f0823d56b3abcb6a09&lat=35.41342&lon=-85.36320&zoom=7'></iframe>
       </div>
+    </div>
       <!-- End of Water Trail Slide -->
 
       <!-- Scenic Rivers Slide -->
@@ -58,9 +64,9 @@
           <h1> WARNING: PADDLE AT YOUR OWN RISK. </h1>
           <h3> TVA, the State of Tennessee, and other project affiliates are not responsible for your personal safety,
             vehicle, damage to you, your boat, or your personal property. Boating involves some risk of drowning, injury or death.</h3>
+          <h3 id="safetyBtmH">Federal and State Law prohibit excavation, removal, damage, alterations, or defacement of archaeological resources on Federal and State Property.</h3>
         </div>
         <div class="text-div" id="safetyWarning">
-          <p> Scroll down to see safety tips </p>
           <ol type="1">
             <li>Wear a properly fitted U.S. Coast Guard approved life jacket at all times while on the water.</li>
             <li>Know how to safely enter, exit, and paddle your canoe or kayak. Know how to get out of, hang on to, and re-enter your capsized boat.</li>
@@ -80,9 +86,10 @@
             <li>Local, state and federal camping, boating, fishing and hunting rules and regulations apply.</li>
           </ol>
         </div>
-        <div>
-          <h3 id="safetyBtmH">Federal and State Law prohibit excavation, removal, damage, alterations, or defacement of archaeological resources on Federal and State Property.</h3>
-        </div>
+        <button type="button" class="btn btn-info" role="button" id="warningBtn"
+          href="javascript:toggleDiv('safetyWarning');">
+      Read more
+  </button>
       </div>
       <!-- End of Safety Slide -->
 
@@ -152,6 +159,22 @@
         });
       </script>
       <!-- End of Fullpage javascript-->
+
+      <script>
+      $(document).ready(function(){
+          $("#warningBtn").click(function(){
+              $("#safetyWarning").toggle();
+          });
+      });
+      </script>
+      <script>
+      $(document).ready(function(){
+          $("#mapbtn").click(function(){
+              $("#Arcmap").toggle();
+              $("#TNVWT_Logo").toggle();
+          });
+      });
+      </script>
 
 </body>
 
