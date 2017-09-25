@@ -160,6 +160,13 @@
         $(document).ready(function() {
           $("#warningBtn").click(function() {
             $("#safetyWarning").toggle();
+            var $this = $(this);
+            $this.toggleClass('#warningbtn');
+            if($this.hasClass('#warningbtn')){
+              $this.text('Read less');
+            } else {
+              $this.text('Read more');
+            }
           });
         });
       </script>
